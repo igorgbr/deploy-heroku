@@ -46,6 +46,6 @@ io.on('error', (error) => {
   console.log('Erro no socket', error.message);
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3000;
 
 http.listen(PORT, () => console.log('listening on port ', PORT));
